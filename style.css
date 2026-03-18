@@ -1,0 +1,338 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #3d1745; 
+    background-image: url(aa.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+
+    color: white;
+    font: 11px/16px "trebuchet ms", arial, helvetica, sans;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------- IMAGE FIX ---------------- */
+/* prevents images from stretching or breaking layout */
+
+img {
+    max-width: 100%;     /* never wider than container */
+    height: auto;        /* keep aspect ratio */
+    display: block;
+}
+
+/* optional container for images */
+.image-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+/* ------------------------------------------- */
+
+p {
+	font: 11px/16px "trebuchet ms", arial, helvetica, sans;
+	text-align: justify;
+	letter-spacing: 1px;
+	margin: 0 0 0;
+	padding: 0 22px 15px;
+}
+
+a {
+	color: #3d1745;
+	text-decoration: none;
+	background-color: #ffae00;
+}
+
+a abbr {
+	color: #3d1745;
+	text-decoration: none;
+}
+
+.sidebar a abbr {
+	color: #ffae00;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+abbr {
+	color:  rgb(199, 182, 182);
+	text-transform: uppercase;
+	cursor: help;
+}
+
+/* specific divs */
+
+footer {
+	background: transparent url(footer_bg.gif) no-repeat left bottom;
+	padding: 20px 0 60px 22px;
+}
+
+.page-wrapper {
+    background: #3d1745 url(steine.gif) repeat-y;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 770px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5); 
+    min-height: 100vh;
+}
+
+.design-selection {
+	background:  url(kasten1_03.png) no-repeat left bottom;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.design-archives, .zen-resources {
+	background: #3d1745 url(blume_unten.gif) no-repeat left bottom;
+	margin-top: 26px;
+	padding-bottom: 15px;
+}
+
+/* header graphics */
+
+header {
+    background: #3d1745 url(css.gif) no-repeat center bottom;
+    background-size: cover; 
+    height: 366px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-indent: -9999px; /* Hides the default text to show the graphic */
+}
+header h2 {
+	line-height: 0;
+	background: #3d1745 url(headlines_02.gif) no-repeat;
+	text-indent: -7000px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 385px;
+	left: 355px;
+	width: 370px;
+	height: 68px;
+}
+
+.summary {
+	background-color: #3d1745;
+	text-align: left;
+	margin: 82px 0 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 355px;
+	width: 370px;
+	height: auto;
+}
+
+* html header h2,  * html .summary { left: 155px; }
+
+
+
+.summary h3 {
+    color: #ffae00;                      /* Golden yellow text from image */
+    text-indent: 0;                      /* Make sure text is visible */
+    font-family: "Georgia", serif;       /* Or a similar decorative font */
+    text-transform: lowercase;
+}
+
+h3 {
+	text-indent: -70000px;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 { display: none; }
+
+.preamble h3 {
+	background: url(headlines_03.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+.explanation h3 {
+	background: url(headlines_04.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+.participation h3 {
+	background: url(headlines_05.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+.benefits h3 {
+	background: url(headlines_06.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+.requirements h3 {
+	background: url(headlines_07.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+.preamble,  .supporting {
+	background-color: #3d1745;
+	text-align: left;
+	position: relative;
+	left: 355px;
+	width: 370px;
+}
+
+* html .preamble, * html .supporting {
+	background-color: #3d1745;
+	text-align: left;
+	position: relative;
+	left: 155px;
+	width: 370px;
+}
+
+/* sidebar */
+
+.sidebar {
+    position: absolute;
+    top: 400px;
+    left: 80px;
+    width: 230px;
+    background: #3d1745;                /* Darker wine color */
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+
+
+
+.sidebar .wrapper {
+	text-align: left;
+	position: relative;
+	left: 38px;
+	width: 191px;
+}
+
+.sidebar h3 {
+	margin: 0;
+	width: 229px;
+	height: 68px;
+}
+
+.sidebar h3.select {
+	background: url(kastenlilie.png) no-repeat left top;
+	position: relative;
+	right: 38px;
+}
+
+.sidebar h3.select {
+    color: #feffff;
+    font-size: 15px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+    text-transform: uppercase;
+    text-indent: 0;
+    letter-spacing: 1px;
+    display: block;
+    padding-top: 15px;
+    padding-left: 70px;
+    height: 28px;
+}
+
+.sidebar h3.resources {
+	background: url(Resources.png) no-repeat left top;
+	margin-top: 23px;
+	position: relative;
+	right: 38px;
+}
+.sidebar h3.archives
+
+{
+	background: url(archives.png) no-repeat left top;
+	margin-top: 23px;
+	position: relative;
+	right: 38px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	font-size: 11px;
+	line-height: 11px;
+	background: url(bullet1.gif) no-repeat 0 12px;
+	list-style-type: none;
+	display: block;
+	margin: 0 0 0 14px;
+	padding: 0 0 0 20px;
+	height: auto;
+}
+
+.sidebar li a {
+	color: #feffff;
+	padding-top: 10px;
+	font-size: 15px;
+	text-shadow: #000000 1px 1px 2px;
+	font-weight: bold;
+	line-height: 15px;
+	text-decoration: none;
+	background: transparent;
+	display: block;
+	padding: 9px 0 0 0;
+	width: auto;
+}
+
+.sidebar li a:hover {
+	color: #ffae00;
+	text-decoration: underline;
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 { display: none; }
+
+/* Falling Petals Styles */
+.petal {
+    position: fixed;
+    top: -10%;
+    z-index: 9999; /* Ensure they float above everything */
+    pointer-events: none; /* User can click through them */
+    background: #ffb7c5; /* Soft pink color */
+    border-radius: 150% 0 150% 0;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg) translateX(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(110vh) rotate(720deg) translateX(100px);
+        opacity: 0;
+    }
+}
